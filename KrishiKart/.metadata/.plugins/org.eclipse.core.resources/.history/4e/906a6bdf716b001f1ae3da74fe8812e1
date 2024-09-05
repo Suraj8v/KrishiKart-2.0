@@ -1,0 +1,9 @@
+package com.krishikart.app.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.krishikart.app.entities.BuyerCart;
+
+public interface BuyerCartRepo extends JpaRepository<Long, BuyerCart> {
+
+}

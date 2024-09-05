@@ -1,0 +1,5 @@
+package com.krishikart.app.entities;
+
+public class Address {
+
+}
