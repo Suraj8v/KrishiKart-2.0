@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.krishikart.app.entities.Buyer;
 
 @Repository
-public interface BuyerRepo extends JpaRepository<Long, Buyer> {
+public interface BuyerRepo extends JpaRepository<Buyer,Long> {
 
 }

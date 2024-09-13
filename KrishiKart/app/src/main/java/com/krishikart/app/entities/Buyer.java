@@ -3,12 +3,14 @@ package com.krishikart.app.entities;
 import java.time.LocalDate;
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -53,6 +55,9 @@ public class Buyer {
 	private List<Address> addresses;
 	
 	@OneToMany(mappedBy = "buyer")
-	private List<Order> orders;
+	private List<Orders> orders;
+	
+	@OneToOne(mappedBy = "buyer", cascade = CascadeType.ALL)
+	private BuyerCart cart;
 	
 }

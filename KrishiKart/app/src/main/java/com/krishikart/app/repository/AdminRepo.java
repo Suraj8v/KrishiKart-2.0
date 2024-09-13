@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.krishikart.app.entities.Admin;
 
 @Repository
-public interface AdminRepo extends JpaRepository<Long, Admin> {
+public interface AdminRepo extends JpaRepository<Admin,Long> {
 
 }

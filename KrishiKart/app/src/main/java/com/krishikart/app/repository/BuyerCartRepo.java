@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.krishikart.app.entities.BuyerCart;
 
 @Repository
-public interface BuyerCartRepo extends JpaRepository<Long, BuyerCart> {
+public interface BuyerCartRepo extends JpaRepository<BuyerCart,Long> {
 
 }
